@@ -1,0 +1,47 @@
+ .card {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 20px;
+  margin-left: 50px;
+
+
+}
+
+
+.team-img img {
+  width: 100%;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+}
+
+.connect-button {
+  width: 50%;
+  padding: 6px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 2px solid #D5BB8A;
+  background-color: white;
+  color: #D5BB8A;
+  margin-top: 10px;
+
+}
+
+.role-color {
+  color: #5A5A5A;
+}
+
+.button-link {
+  text-decoration: none;
+  color: #D5BB8A;
+}
+
+.H4-tag {
+  font-weight: bold;
+}
+
+.textinfo {
+  margin-top: 10px;
+}  
+

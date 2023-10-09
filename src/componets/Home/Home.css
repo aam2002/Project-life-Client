@@ -1,0 +1,33 @@
+.homebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 867px;
+    background-color:#F0F0F0;
+
+   
+
+}
+.text-box{
+    padding: 30px;
+ 
+
+}
+
+.bhagvat-heading{
+    color: #ff6600;
+   
+
+}
+.para-text{
+    color: #5A5A5A;
+}
+
+.scroll-button{
+    width: 160px;
+    padding: 15px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border:  2px solid #ff6600;
+}
+
