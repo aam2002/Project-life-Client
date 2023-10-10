@@ -1,12 +1,39 @@
 .homebox{
+    height: 950px; 
+    
+
+}
+.homebox1{
+    height: 900px;
+    background-color: var(--nav-background);
+    padding-top: 80px;
+}
+
+.home-div2{
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 867px;
-    background-color:#F0F0F0;
+    justify-content: space-around ;
+}
 
+.home-line{
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.home-line-img{
+    margin-left: 30%;
+        
+       
    
+} 
 
+
+.home-img img{
+    width: 600px;
+    height: auto;
+   
 }
 .text-box{
     padding: 30px;
@@ -15,19 +42,22 @@
 }
 
 .bhagvat-heading{
-    color: #ff6600;
-   
+    color: var(--nav-texthover-color);
+}
 
+.H2-tag{
+    color: var(--text-black);
 }
 .para-text{
-    color: #5A5A5A;
+    color: var(--para);
 }
 
 .scroll-button{
+    color: var(--text-black);
     width: 160px;
     padding: 15px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    border:  2px solid #ff6600;
+    border:  2px solid var(--nav-texthover-color);
 }
 

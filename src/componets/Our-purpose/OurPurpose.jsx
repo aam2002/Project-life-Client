@@ -7,7 +7,7 @@ function OurPurpose() {
         <div className='purpose'>
             <div className='purpose-text'>
             <h2>Our Purpose</h2>
-            <p className='purpose-para'>our purpose behind this website</p>
+            <p className='purpose-para'>Our Purpose Behind This Website</p>
            </div>
            <div className='purpose-box'>
            <div className='p-p'>

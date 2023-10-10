@@ -21,20 +21,20 @@
   padding: 6px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  border: 2px solid #D5BB8A;
+  border: 2px solid var(--team-connect-border);
   background-color: white;
-  color: #D5BB8A;
+  color: var(--team-connect-text);
   margin-top: 10px;
 
 }
 
 .role-color {
-  color: #5A5A5A;
+  color: var(--para);
 }
 
 .button-link {
   text-decoration: none;
-  color: #D5BB8A;
+  color:var( --team-connect-border);
 }
 
 .H4-tag {

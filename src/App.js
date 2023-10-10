@@ -1,3 +1,4 @@
+import Content from './componets/Content/Content';
 import Home from './componets/Home/Home';
 import Navbar from './componets/Navbar/Navbar'
 import OurPurpose from "./componets/Our-purpose/OurPurpose";
@@ -10,6 +11,7 @@ function App() {
   return <div >
   <Navbar/>
   <Home/>
+  <Content/>
   
   <OurPurpose/>
   <OurTeam/>

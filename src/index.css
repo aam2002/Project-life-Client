@@ -14,3 +14,32 @@ h2{
 p{
     font-family: 'Roboto Flex', sans-serif;
 }
+
+:root{
+    --nav-background:#F0F0F0;
+    --nav-texthover-color: #ff6600;
+    --text-black: #000;
+    --para: #5A5A5A;
+    --multiple-circle: #E6E6E6;
+    --whitecolor:#FFFFFF;
+    --content-p:#D1A76D;
+    --content-per:#D5C5AA;
+    --team-connect-border:#D5BB8A;
+    --team-connect-text:#A78555;
+}
+
+
+[data-theme = "dark"]{
+    --nav-background:#392B1D;
+    --text-black: #FFFFFF; 
+    --para:#EEE8DD;
+    --multiple-circle: #4D3C2A;
+    --content-p:#FF6600;
+    --content-per:#FFFFFF;
+
+
+
+
+
+
+}

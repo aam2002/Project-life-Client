@@ -13,7 +13,7 @@
   .prev-button,
   .next-button {
    background-color: transparent;
-    color: #000000;
+    color: var(--text-black);
     padding: 6px 12px;
     border: none;
     border-radius: 50%;
