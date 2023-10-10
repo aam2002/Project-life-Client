@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 
 h2{
@@ -15,6 +16,9 @@ p{
     font-family: 'Roboto Flex', sans-serif;
 }
 
+body{
+    background-color: var(--body-background);
+}
 :root{
     --nav-background:#F0F0F0;
     --nav-texthover-color: #ff6600;
@@ -26,6 +30,8 @@ p{
     --content-per:#D5C5AA;
     --team-connect-border:#D5BB8A;
     --team-connect-text:#A78555;
+    --body-background:#FFFFFF;
+    
 }
 
 
@@ -36,10 +42,6 @@ p{
     --multiple-circle: #4D3C2A;
     --content-p:#FF6600;
     --content-per:#FFFFFF;
-
-
-
-
-
+    --body-background: #4D3C2A;
 
 }
