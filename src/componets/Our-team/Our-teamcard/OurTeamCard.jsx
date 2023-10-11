@@ -19,4 +19,3 @@ function OurTeamCard({ image, name, role, connect }) {
 
 export default OurTeamCard
 
-
