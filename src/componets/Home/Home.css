@@ -1,33 +1,72 @@
-.homebox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 867px;
-    background-color:#F0F0F0;
-
-   
-
+.homebox {
+  height: 100vh;
+  width: 100%;
 }
-.text-box{
-    padding: 30px;
- 
-
+.homebox1 {
+  display: flex;
+  flex-direction: column;
+  height: 92vh;
+  background-color: var(--nav-background);
+  justify-content: space-between;
 }
 
-.bhagvat-heading{
-    color: #ff6600;
-   
-
-}
-.para-text{
-    color: #5A5A5A;
-}
-
-.scroll-button{
-    width: 160px;
-    padding: 15px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border:  2px solid #ff6600;
+.home-div2 {
+  margin: 0 auto;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.home-line {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: -50px;
+}
+
+.home-img img {
+  width: 1000px;
+  height: auto;
+}
+
+.bhagvat-heading {
+  color: var(--nav-texthover-color);
+  font-family: "Libre Baskerville", serif;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.H2-tag {
+  color: var(--text-black);
+  font-family: "Libre Baskerville", serif;
+  font-size: 64px;
+  line-height: normal;
+}
+.para-text {
+  color: var(--para);
+  font-size: 24px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+}
+
+.scroll-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 194.634px;
+  height: 50px;
+  padding: 13px 24px;
+  align-items: flex-start;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 25.5px 0px;
+  border: 2px solid #ff4500;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.scroll-button span {
+  line-height: 23px;
+  color: var(--text-black);
+}

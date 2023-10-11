@@ -8,10 +8,12 @@ function Navbar() {
 
     const [isMobile, setIsMobile] = useState(false);
     return (
+        <>
+        <div className='nav-container'>
         <div className='navbar'>
             <div className='navlogo'><img src='logoblack.png' alt='logo' /></div>
 
-            <div className='list-item'>
+            <div className='nav-list-item'>
                 <ul>
                     <li> Home</li>
                     <li>Content</li>
@@ -26,6 +28,9 @@ function Navbar() {
 
 
         </div>
+        </div>
+        </>
+        
     );
 }
 

@@ -1,7 +1,8 @@
 .purpose {
+    padding-top: 40px;
     padding-left: 60px;
     padding-right: 60px;
-    background-color: #F0F0F0;
+    background-color: var(--nav-background);
 
 
 }
@@ -12,14 +13,18 @@
     justify-content: center;
 }
 
+.purpose-heading{
+    color: var(--text-black);
+}
 .purpose-para {
-    color: #FF4500;
+    color: var( --nav-texthover-color);
 }
 
 .p-p {
     display: flex;
     margin-top: 30px;
     margin-right: 20px;
+    color: var(--text-black);
 }
 
 
