@@ -9,7 +9,7 @@ function Hero() {
     <>
       <div className="homebox">
         <div className="flex justify-between align-middle mx-auto relative">
-          <div className="flex w-[90vw] justify-between mx-auto">
+          <div className="flex w-[80vw] justify-between mx-auto">
             <div className="left-box flex align-middle justify-center">
               <div className="flex flex-column  ">
                 <h2 className="bhagvat-heading">Bhagvat Gita:</h2>
