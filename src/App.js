@@ -1,22 +1,13 @@
-import Content from './componets/Content/Content';
-import Home from './componets/Home/Home';
-import Navbar from './componets/Navbar/Navbar'
-import OurPurpose from "./componets/Our-purpose/OurPurpose";
-import OurTeam from './componets/Our-team/OurTeam';
-
+import LandingPage from "./Components/LandingPage/LandingPage";
+import { Routes, Route } from "react-router-dom";
 
 
 
 function App() {
   return <div >
-  <Navbar/>
-  <Home/>
-  <Content/>
-  
-  <OurPurpose/>
-  <OurTeam/>
-
-
+     <Routes>
+      <Route path="/" element={<LandingPage/>} />
+      </Routes>
   </div>;
 }
 

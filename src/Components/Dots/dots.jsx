@@ -1,7 +1,7 @@
 import React from "react";
 import "./dots.css";
 
-function Dots({ rows, columns , section }) {
+function Dots({ rows, columns }) {
   const numRows = rows; // Number of rows
   const numCols = columns; // Number of columns
   const circles = [];
@@ -12,7 +12,7 @@ function Dots({ rows, columns , section }) {
     }
     circles.push(<br key={circles.length} />);
   }
-console.log(section)
+console.log(circles)
   return <div>{circles}</div>;
 }
 export default Dots;

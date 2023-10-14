@@ -2,9 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   width: 90vw;
   margin: auto;
-  padding: 0;
+  padding-top: 10px;
 }
 
 .nav-container {
