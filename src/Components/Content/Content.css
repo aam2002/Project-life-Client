@@ -1,73 +1,111 @@
-.content{
+
+.content {
     padding-bottom: 100px;
-  
 }
 
 
-.content-card{
+.content-card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    
-}
-
-.content-heading{
-    padding-left: 60px;
-    padding-right: 60px;
-}
-.content-p{
-    color: var(--content-p);
-}
-.content-div{
-    background-color: var(--nav-background);
-    width: 400px;
-    height: 30%;
-    padding: 30px;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    margin-bottom: 40px;
-}
+    gap: 34px;
+   
 
 
-.content-img img{
-    background-color: blanchedalmond;
-    width: 100%;
-    height: 30%;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
 }
 
-.content-chapter{
+.content-heading {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.content-h {
     font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
     font-weight: bold;
     color: var(--text-black);
+
 }
-.content-para{
+
+.content-p {
+    color: var(--content-p);
+    font-family: "Roboto Flex", sans-serif;
+    margin-bottom: 50px;
+}
+
+.content-div {
+    background-color: var(--nav-background);
+    width: 231.99px;
+    height: 249.85px;
+    padding: 20px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+}
+
+
+.content-img img {
+    background-color: rgb(251, 37, 9);
+    width: 192.12px;
+    height: 148.15px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.content-chapter {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18.96px;
+    font-weight: bold;
     color: var(--text-black);
-
-}
-.content-description{
-    font-family: 'Roboto Flex', sans-serif;
+    padding: 3px;
 }
 
-.content-button{
+.content-para {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 13.27px;
+    color: var(--text-black);
+    padding: 3px;
+
+}
+
+.content-button {
     display: flex;
     justify-content: center;
-  
+
 }
 
-.content-button button{
+.content-dots {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+
+}
+
+.content-circle {
+    width: 7px;
+    height: 7px;
+    background-color: var(--content-dot);
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+
+}
+
+.active-dot {
+    background-color: var(--content-active-dot);
+}
+
+.content-button button {
     border: none;
-    padding: 30px;
+    padding: 10px;
     font-family: 'Libre Baskerville', serif;
-    color:var(--content-per);
+    color: var(--content-per);
 }
 
-.content-button button:active {
+.content-button button:hover {
     text-decoration: underline;
-    color:var(--content-p);
+    color: var(--content-p);
 
 }

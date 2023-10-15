@@ -6,7 +6,7 @@ function OurPurpose() {
   return (
     <div className="purpose">
       <div className="purpose-text">
-        <h2 className="purpose-heading">Our Purpose</h2>
+        <p className="purpose-heading">Our Purpose</p>
         <p className="purpose-para">Our Purpose Behind This Website</p>
       </div>
       <div className="purpose-box">

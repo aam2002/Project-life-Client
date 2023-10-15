@@ -30,7 +30,7 @@ function Hero() {
               </div>
             </div>
           </div>
-          <div className="absolute bottom-[-193px]">
+          <div className="absolute bottom-[-193px]">         
             <Dots rows={15} columns={5} />
           </div>
         </div>
