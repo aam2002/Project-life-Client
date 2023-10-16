@@ -4,7 +4,7 @@
   align-items: center;
   width: 90vw;
   margin: auto;
-  padding-top: 10px; 
+  padding-top: 10px;
 }
 
 .nav-container {
@@ -36,6 +36,7 @@
   text-decoration: underline;
   text-decoration-color: var(--nav-texthover-color);
 }
+
 .darkmode {
   color: white;
 }
@@ -47,51 +48,23 @@
   outline: none;
 }
 
-@media screen and (max-width: 660px) {
-  .nav-list-item ul li {
-    display: none;
-  }
-  .toggle-button {
-    display: block;
-    
-  }
-  .darkmode{
-    display: none;
-  }
 
-}
-
-
-
-/* .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80vw;
-  margin: auto;
-}
-
-.nav-container {
-  width: 100vw;
-  background-color: var(--nav-background);
+.nav-list-item-mobile {
   position: fixed;
-  z-index: 4;
-}
-
-.navlogo img {
-  height: 73px;
-  width: auto;
-}
-
-.nav-list-item ul {
+  top: 0;
+  right: 1px;
+  bottom: 0;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-list-item li {
-  margin-right: 20px;
+  background-color: var(--nav-background);
+  z-index: 100;
+  margin-top: 70px;
+  height: 100vh;
+  width: 50%;
+  transition: left 0.3s ease-in;
   font-weight: 600;
   cursor: pointer;
   color: var(--text-black);
@@ -99,32 +72,45 @@
   font-size: 16px;
 }
 
-.nav-list-item li:hover {
+
+.nav-list-item-mobile ul li {
+  margin: 40px;
+  text-align: center;
+ 
+}
+
+.nav-list-item-mobile ul li:hover {
   text-decoration: underline;
   text-decoration-color: var(--nav-texthover-color);
 }
-.darkmode {
-  color: white;
-}
 
-.toggle-button {
-  display: none;
-  border: none;
-  cursor: pointer;
-  outline: none;
-}
 
-@media screen and (max-width: 768px) {
-  .list-item {
+@media screen and (max-width: 660px) {
+  .nav-list-item ul li {
     display: none;
   }
-  .darkmode {
-    display: none;
-  }
+
   .toggle-button {
     display: block;
+
   }
+
+  .darkmode {
+    display:none;
+  }
+
+  .nav-list-item-mobile {
+    display: block;
+    list-style: none;
+  }
+  
+  .switch-theme{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+
+
 }
 
-
- */

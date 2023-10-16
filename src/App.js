@@ -5,9 +5,10 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return <div >
-     <Routes>
+    <Routes>
       <Route path="/" element={<LandingPage/>} />
       </Routes>
+  
   </div>;
 }
 

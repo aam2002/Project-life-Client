@@ -4,11 +4,22 @@ import Content from "../Content/Content";
 import OurPurpose from "../Our-purpose/OurPurpose";
 import OurTeam from "../Ourteam/OurTeam";
 import Layout from "../Layout/Layout";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+
 const LandingPage = () => {
   return (
     <>
+    {/* <BrowserRouter>
+        <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/Content" element={ <Content />} />
+        <Route path="/Our-purpose" element={<OurPurpose />} />
+        <Route path="/Our-team" element={ <OurTeam />} />
+        <Routes/>
+      </BrowserRouter> */}
       <Layout>
-        {/* <Hero /> */}
+        <Hero />
         <Content />
         <OurPurpose />
         <OurTeam />
