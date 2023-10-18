@@ -1,0 +1,9 @@
+.dots {
+  width: 7px;
+  height: 7px;
+  background-color: var(--multiple-circle);
+  border-radius: 50%;
+  margin: 5px;
+  display: inline-block;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.314);
+}

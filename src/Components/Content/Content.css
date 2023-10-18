@@ -1,0 +1,128 @@
+.content {
+  /* padding-bottom: 100px; */
+  width: 80vw;
+  margin: auto;
+}
+
+.content-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 34px;
+}
+
+.content-h {
+  font-family: "Libre Baskerville", serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--text-black);
+}
+
+.content-p {
+  color: var(--content-p);
+  font-family: "Roboto Flex", sans-serif;
+  margin-bottom: 50px;
+}
+
+.content-div {
+  background-color: var(--nav-background);
+  width: 231.99px;
+  height: 249.85px;
+  padding: 20px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.content-img img {
+  background-color: rgb(251, 37, 9);
+  width: 192.12px;
+  height: 148.15px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.content-chapter {
+  font-family: "Libre Baskerville", serif;
+  font-size: 18.96px;
+  font-weight: bold;
+  color: var(--text-black);
+  padding: 3px;
+}
+
+.content-para {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 13.27px;
+  color: var(--text-black);
+  padding: 3px;
+}
+
+.content-button {
+  display: flex;
+  justify-content: center;
+}
+
+.content-dots {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content-circle {
+  width: 7px;
+  height: 7px;
+  background-color: var(--content-dot);
+  border-radius: 50%;
+  margin: 5px;
+  display: inline-block;
+}
+
+.active-dot {
+  background-color: var(--content-active-dot);
+}
+
+.content-button button {
+  border: none;
+  padding: 10px;
+  font-family: "Libre Baskerville", serif;
+  color: var(--content-per);
+}
+
+.content-button button:hover {
+  text-decoration: underline;
+  color: var(--content-p);
+}
+@media screen and (max-width: 768px) {
+  .content-h,
+  .content-p {
+    width: 80vw;
+    margin: auto;
+  }
+  .content {
+    width: 90vw;
+    margin: auto;
+  }
+  .content-div {
+    width: 171px;
+    height: 186px;
+    margin: 0px auto;
+    border-radius: 24px 0px;
+    box-sizing: border-box;
+    padding-top: 7px;
+  }
+  .content-img img {
+    width: 141.12px;
+    height: 114.15px;
+    border-radius: 23.625px 0px;
+  }
+  .content-chapter {
+    font-size: 14px;
+    padding: 0px;
+  }
+  .content-para {
+    font-size: 10px;
+    padding: 0px;
+  }
+  .content-card {
+    gap: 10px 0px;
+  }
+}
