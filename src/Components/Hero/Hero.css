@@ -4,7 +4,7 @@
   grid-template-columns: repeat(11, 1fr);
 }
 .homebox {
-  height: 70vh;
+  height: 666px;
   width: 100vw;
   background-color: var(--nav-background);
   grid-row: 1/2;
@@ -13,7 +13,7 @@
 .dots-container {
   height: 390px;
   grid-column: 2/3;
-  grid-row: 2/3;
+  grid-row: 2/-2;
   align-self: center;
 }
 .right-box img {
