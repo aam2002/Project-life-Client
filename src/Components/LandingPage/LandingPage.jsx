@@ -22,8 +22,8 @@ const LandingPage = () => {
       <Layout>
         <Hero />
         <Content />
-        <OurPurpose />
-        <OurTeam />
+        {/* <OurPurpose /> */}
+        {/* <OurTeam /> */}
       </Layout>
     </>
   );

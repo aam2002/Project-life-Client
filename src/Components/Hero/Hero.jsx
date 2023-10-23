@@ -22,7 +22,7 @@ function Hero() {
   }, []);
   return (
     <>
-      <div className="homemain">
+      {/* <div className="homemain">
         <div className="homebox">
           <div className="flex md:w-[80vw] justify-between mx-auto text-img md:flex-row flex-col-reverse w-[100vw] gap-24">
             <div className="left-box flex align-middle justify-center">
@@ -49,7 +49,59 @@ function Hero() {
         <div className="w-[100px] mx-auto dots-container">
           <Dots rows={10} columns={5} />
         </div>
+      </div> */}
+
+
+
+      {/* JKroy code change here */}
+      <div className="homemain">
+        <div className="homeboxdiv">
+          <div className="homebox">
+            <div className="homeboxheading">
+              <h2 className="bhagvat-heading">Bhagvat Gita:</h2>
+              <p className="H2-tag">
+                Your path to <br /> divinity{" "}
+              </p>
+              <p className="para-text"> Read and Discover Inner Peace</p>
+              <div className="scroll-button">
+                <span>Scroll to Read</span>{" "}
+                <FontAwesomeIcon icon={faCaretDown} />
+              </div>
+            </div>
+            <div className="right-box">
+              <img src="cover-copy-2.png" alt="cover" />
+            </div>
+          </div>
+
+
+          <div className="dots-container">
+            <Dots rows={8} columns={5} />
+          </div>
+        </div>
+
+
+
+
       </div>
+
+
+
+      <div className="homemain2">  
+      <div className="dots-container2">
+        <Dots rows={2} columns={5} />
+      </div></div>
+
+
+
+
+
+
+
+
+
+
+
+
     </>
   );
 }

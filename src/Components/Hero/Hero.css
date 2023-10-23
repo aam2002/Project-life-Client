@@ -1,4 +1,4 @@
-.homemain {
+/* .homemain {
   display: grid;
   grid-template-rows: 1fr 50px 70px;
   grid-template-columns: repeat(11, 1fr);
@@ -13,8 +13,8 @@
 .dots-container {
   height: 390px;
   grid-column: 2/3;
-  grid-row: 2/3;
-  align-self: center;
+  grid-row: 2/-2;
+  align-self:center;
 }
 .right-box img {
   height: auto;
@@ -65,11 +65,20 @@
   .right-box img {
     height: auto;
     width: 100vw;
-  }
-  .dots-container {
+  } */
+/* .dots-container {
     position: absolute;
     visibility: hidden;
+  } */
+
+/* .dots-container {
+    height: 0;
+    visibility: hidden;
+    grid-column: auto; 
+    grid-row: auto;
+    align-self: auto; 
   }
+
   .homebox {
     height: 100vh;
     width: 100vw;
@@ -99,4 +108,139 @@
     line-height: 23px;
     color: var(--text-black);
   }
+} */
+
+
+
+/*JKroy code change here  */
+
+.homemain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--nav-background);
+
+}
+.homemain2{
+  display: flex;
+  justify-content: center;
+  
+
+}
+.dots-container2{
+  width: 80vw;
+}
+
+
+.homeboxdiv {
+  display: flex;
+  gap: 90px;
+  flex-direction: column;
+  width: 80vw;
+
+
+}
+
+.homebox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+.homeboxheading {
+  margin-top: 4rem;
+
+}
+
+
+.bhagvat-heading {
+  color: var(--nav-texthover-color);
+  font-family: "Libre Baskerville", serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.H2-tag {
+  color: var(--text-black);
+  font-family: "Libre Baskerville", serif;
+  font-size: 64px;
+  line-height: normal;
+}
+
+.para-text {
+  color: var(--para);
+  font-size: 24px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+}
+
+.scroll-button {
+  display: flex;
+
+  justify-content: center;
+  width: 194.634px;
+  height: 50px;
+  padding: 13px 24px;
+  align-items: flex-start;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 25.5px 0px;
+  border: 2px solid #ff4500;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.scroll-button span {
+  line-height: 23px;
+  color: var(--text-black);
+}
+.right-box{
+  position: absolute;
+  top: 98px;
+  right: 168px;
+}
+.right-box img {
+  width: 719px;
+  height: auto;  
+}
+
+
+@media screen and (max-width: 1409px) {
+ 
+
+}
+
+@media screen and (max-width:660px) {
+  .right-box{
+    position: static;
+  }
+  .right-box img {
+    order: 1;
+    width: 100%;
+    height: auto;
+    
+    
+  }
+  .homeboxheading{
+    order: 2;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .homebox {
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--nav-background);
+  
+  }
+
+  .dots-container2{
+    display: none;
+  }
+  .dots-container{
+    display: none;
+  }
+
+  
 }
