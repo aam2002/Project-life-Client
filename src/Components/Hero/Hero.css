@@ -4,7 +4,7 @@
   grid-template-columns: repeat(11, 1fr);
 }
 .homebox {
-  height: 70vh;
+  height: 666px;
   width: 100vw;
   background-color: var(--nav-background);
   grid-row: 1/2;
@@ -14,7 +14,11 @@
   height: 390px;
   grid-column: 2/3;
   grid-row: 2/-2;
+<<<<<<< HEAD
   align-self:center;
+=======
+  align-self: center;
+>>>>>>> 9fef0796582d321df8c0e61540cf6b21e64150c2
 }
 .right-box img {
   height: auto;
