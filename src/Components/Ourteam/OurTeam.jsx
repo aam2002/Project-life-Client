@@ -4,7 +4,7 @@ import OurTeamCard from "./Our-teamcard/OurTeamCard";
 
 const OutTeam = () => {
   return (
-    <div className="team">
+    <div className="team ">
       <HorizontalScrollCarousel />
     </div>
   );
@@ -19,15 +19,16 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-87%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] team ">
+    <section ref={targetRef}  className="relative h-[300vh] team ">
+      <p>Our-team</p>
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-4 ">
+        <motion.div style={{ x }} className="flex " >
           {cards.map((member, index) => (
             <OurTeamCard key={index} {...member} />
           ))}
         </motion.div>
       </div>
-      <a href=""></a>
+     
     </section>
   );
 };

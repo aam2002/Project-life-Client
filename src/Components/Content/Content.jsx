@@ -148,6 +148,7 @@ function Content() {
     const displayedChapters = chapters.slice(currentChapterIndex, currentChapterIndex + 8);
 
     return (
+        <div className='contentbox'>
         
         <div className='content'>
             <div className='content-heading'>
@@ -182,6 +183,8 @@ function Content() {
                 <button onClick={previousPage}>Previous Page</button>
                 <button onClick={nextPage}>Next Page</button>
             </div>
+        </div>
+
         </div>
   
     );
