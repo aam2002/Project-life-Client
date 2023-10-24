@@ -70,8 +70,7 @@
     position: absolute;
     visibility: hidden;
   }
-  .homebox {
-    height: 100vh;
+  .homebox {    height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
