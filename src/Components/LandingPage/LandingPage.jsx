@@ -5,6 +5,7 @@ import OurPurpose from "../Our-purpose/OurPurpose";
 import OurTeam from "../Ourteam/OurTeam";
 import Layout from "../Layout/Layout";
 import Navbar from "../Navbar/Navbar";
+// import Team from "../Team/Team";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
@@ -24,6 +25,7 @@ const LandingPage = () => {
         <Content />
         <OurPurpose />
         <OurTeam />
+        {/* <Team/> */}
       </Layout>
     </>
   );

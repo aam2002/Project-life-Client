@@ -78,7 +78,7 @@
 .nav-list-item-mobile ul li {
   margin: 40px;
   text-align: center;
- 
+
 }
 
 .nav-list-item-mobile ul li:hover {
@@ -98,16 +98,16 @@
   }
 
   .darkmode {
-    display:none;
+    display: none;
   }
 
   .nav-list-item-mobile {
     display: block;
     list-style: none;
   }
-  
-  .switch-theme{
-    display: flex;      
+
+  .switch-theme {
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }

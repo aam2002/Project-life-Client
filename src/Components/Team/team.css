@@ -1,0 +1,12 @@
+.teambigdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: aqua;
+}
+
+.teamdiv{
+    width: 80vw;
+    background-color: blue;
+}

@@ -150,3 +150,25 @@
     font-size: 2.4vw;
   }
 }
+
+
+@media screen and (min-width: 1600px) {
+  .right-box {
+    position: absolute;
+    top: 3%;
+    right: 4%;
+  }
+
+  .right-box img {
+    width: 50vw;
+  }
+
+  .homeboxdiv {
+    display: flex;
+    gap: 18vh;
+    flex-direction: column;
+    width: 80vw;
+
+  }
+
+}

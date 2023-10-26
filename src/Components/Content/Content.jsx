@@ -3,7 +3,7 @@ import './Content.css';
 
 function Content() {
     const chapters = [
-                {
+        {
             chapter: 'Chapter 1',
             description: 'A short description about Chapter 1 here',
             image: 'geeta.png',
@@ -149,44 +149,44 @@ function Content() {
 
     return (
         <div className='contentbox'>
-        
-        <div className='content'>
-            <div className='content-heading'>
-                <p className='content-h'>Content</p>
-                <p className='content-p'>Select Chapter To Start Reading</p>
-            </div>
 
-            <div className='content-card'>
-                {displayedChapters.map((chapter, index) => (
-                    <div className='content-div' key={index}>
-                        <div className='content-img'>
-                            <img src={chapter.image} alt='' />
+            <div className='content'>
+                <div className='content-heading'>
+                    <p className='content-h'>Content</p>
+                    <p className='content-p'>Select Chapter To Start Reading</p>
+                </div>
+
+                <div className='content-card'>
+                    {displayedChapters.map((chapter, index) => (
+                        <div className='content-div' key={index}>
+                            <div className='content-img'>
+                                <img src={chapter.image} alt='' />
+                            </div>
+                            <div>
+                                <p className='content-chapter'>{chapter.chapter}</p>
+                                <p className='content-para'>{chapter.description}</p>
+                            </div>
                         </div>
-                        <div>
-                            <p className='content-chapter'>{chapter.chapter}</p>
-                            <p className='content-para'>{chapter.description}</p>
-                        </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
+
+                <div className='content-dots'>
+                    {Array.from({ length: pageCount }).map((_, index) => (
+                        <div
+                            className={`content-circle ${index === activeDotIndex ? 'active-dot' : ''}`}
+                            key={index}
+                        ></div>
+                    ))}
+                </div>
+
+                <div className='content-button'>
+                    <button onClick={previousPage}>Previous Page</button>
+                    <button onClick={nextPage}>Next Page</button>
+                </div>
             </div>
 
-            <div className='content-dots'>
-                {Array.from({ length: pageCount }).map((_, index) => (
-                    <div
-                        className={`content-circle ${index === activeDotIndex ? 'active-dot' : ''}`}
-                        key={index}
-                    ></div>
-                ))}
-            </div>
-
-            <div className='content-button'>
-                <button onClick={previousPage}>Previous Page</button>
-                <button onClick={nextPage}>Next Page</button>
-            </div>
         </div>
 
-        </div>
-  
     );
 }
 
