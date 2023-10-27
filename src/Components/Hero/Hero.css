@@ -1,24 +1,31 @@
+.main {
+  display: grid;
+  grid-template-rows: 1fr 70px;
+}
+.homelanding {
+  background-color: var(--nav-background);
+}
 .homemain {
   display: grid;
-  grid-template-rows: 1fr 50px 70px;
+  grid-template-rows: 1px 500px 180px;
   grid-template-columns: repeat(11, 1fr);
 }
-.homebox {
-  height: 666px;
-  width: 100vw;
-  background-color: var(--nav-background);
-  grid-row: 1/2;
-  grid-column: 1 / -1;
+.headingbox {
+  align-self: center;
+  grid-row: 2/3;
+  grid-column: 1/2;
 }
 .dots-container {
-  height: 390px;
-  grid-column: 2/3;
-  grid-row: 2/-2;
-  align-self: center;
+  grid-column: 1/2;
+  grid-row: 3/-1;
+  align-self: self-start;
+  justify-self: start;
 }
-.right-box img {
-  height: auto;
-  width: 40vw;
+
+.right-box {
+  grid-column: 3/-1;
+  grid-row: 1/-1;
+  box-sizing: border-box;
 }
 
 .bhagvat-heading {
@@ -29,7 +36,7 @@
 }
 
 .H2-tag {
-  color: var(--text-black);
+  color: var(--text-black); 
   font-family: "Libre Baskerville", serif;
   font-size: 64px;
   line-height: normal;
@@ -62,18 +69,24 @@
   color: var(--text-black);
 }
 @media screen and (max-width: 768px) {
-  .right-box img {
-    height: auto;
-    width: 100vw;
+  .homemain {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    justify-content: center;
+  }
+  .headingbox {
+    align-self: center;
+    grid-row: 2/-1;
+  }
+
+  .right-box {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    box-sizing: border-box;
   }
   .dots-container {
     position: absolute;
     visibility: hidden;
-  }
-  .homebox {    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
   }
   .bhagvat-heading {
     font-size: 48px;
