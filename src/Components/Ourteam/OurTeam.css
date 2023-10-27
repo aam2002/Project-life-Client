@@ -1,4 +1,4 @@
-.team {
+/* .team {
   padding-left: 60px;
   padding-right: 60px;
 }
@@ -49,13 +49,25 @@
   background-color: rgb(134, 248, 19); 
   /* border-top: 4px solid #d5bb8a;
   border-bottom: 4px solid #d5bb8a; 
-  margin-top: 10px; */
-} 
+  margin-top: 10px;
+} */
 
-.team-thank {
-  text-align: center;
-  padding-top: 90px;
-  padding-bottom: 30px;
-  font-weight: 700;
+.team1{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+ 
+}
+.team2{
+  width: 80vw;
   
+}
+
+.team-p{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--text-black);
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
