@@ -4,6 +4,8 @@
   border: none;
   border-radius: 20px;
   margin-left: 50px;
+  
+ 
 }
 
 .team-img img {
@@ -19,7 +21,7 @@
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border: 2px solid #d5bb8a;
-  background-color: white;
+  background-color: rgb(253, 253, 253);
   color: #d5bb8a;
   margin-top: 10px;
 }

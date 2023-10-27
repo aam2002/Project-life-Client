@@ -2,8 +2,8 @@ import React from "react";
 import "./dots.css";
 
 function Dots({ rows, columns }) {
-  const numRows = rows; // Number of rows
-  const numCols = columns; // Number of columns
+  const numRows = rows; 
+  const numCols = columns; 
   const circles = [];
 
   for (let row = 0; row < numRows; row++) {

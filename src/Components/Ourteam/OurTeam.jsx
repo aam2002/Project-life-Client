@@ -1,10 +1,11 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import OurTeamCard from "./Our-teamcard/OurTeamCard";
+import './OurTeam.css'
 
 const OutTeam = () => {
   return (
-    <div className="team">
+    <div className="team ">
       <HorizontalScrollCarousel />
     </div>
   );
@@ -19,20 +20,27 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-87%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] team ">
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-4 ">
-          {cards.map((member, index) => (
-            <OurTeamCard key={index} {...member} />
-          ))}
-        </motion.div>
+
+    <>
+      <div className="team1">
+        <div className="team2">
+          <p className="team-p">Our Team</p>
+          <div>
+            <section ref={targetRef} className="relative h-[120vh] team">
+                <motion.div style={{ x }} className="flex " >
+                  {cards.map((member, index) => (
+                    <OurTeamCard key={index} {...member} />
+                  ))}
+                </motion.div>
+            </section>
+          </div>
+        </div>
       </div>
-      <a href=""></a>
-    </section>
+    </>
   );
 };
 
-//
+
 
 export default OutTeam;
 
