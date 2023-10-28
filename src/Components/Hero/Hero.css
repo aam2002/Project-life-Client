@@ -21,6 +21,7 @@
   align-self: self-start;
   justify-self: start;
 }
+/* as;fljaesdl;fj */
 
 .right-box {
   grid-column: 3/-1;
@@ -36,7 +37,7 @@
 }
 
 .H2-tag {
-  color: var(--text-black); 
+  color: var(--text-black);
   font-family: "Libre Baskerville", serif;
   font-size: 64px;
   line-height: normal;
