@@ -1,3 +1,10 @@
+.main {
+  display: grid;
+  grid-template-rows: 1fr 70px;
+}
+.homelanding {
+  background-color: var(--nav-background);
+}
 .homemain {
   display: flex;
   justify-content: center;
@@ -45,7 +52,7 @@
 }
 
 .H2-tag {
-  color: var(--text-black);
+  color: var(--text-black); 
   font-family: "Libre Baskerville", serif;
   font-size: 4.44vw;
   line-height: normal;
