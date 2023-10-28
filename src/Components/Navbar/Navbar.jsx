@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
+
   return (
     <>
       <div className="nav-container">
@@ -14,6 +15,7 @@ function Navbar() {
           <div className="navlogo">
             <img src="logoblack.png" alt="logo" />
           </div>
+
 
           <div
             className={isMobile ? "nav-list-item-mobile" : "nav-list-item"}

@@ -21,7 +21,7 @@ p {
 
 body {
   background-color: var(--body-background);
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 :root {
   --nav-background: #f0f0f0;
@@ -38,6 +38,7 @@ body {
   --body-background: #ffffff;
   --content-dot:#E6E6E6;
   --content-active-dot:#ff6600;
+ 
 }
 
 [data-theme="dark"] {
@@ -49,5 +50,7 @@ body {
   --content-per: #ffffff;
   --body-background: #4d3c2a;
   --content-dot:#392B1D;
+ 
+  
   
 }
