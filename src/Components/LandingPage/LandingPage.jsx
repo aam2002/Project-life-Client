@@ -2,9 +2,8 @@ import React from "react";
 import Hero from "../Hero/Hero";
 import Content from "../Content/Content";
 import OurPurpose from "../Our-purpose/OurPurpose";
-// import OurTeam from "../Ourteam/OurTeam";
+import OurTeam from "../Ourteam/OurTeam";
 import Layout from "../Layout/Layout";
-import Team from "../Team/Team";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const LandingPage = () => {
@@ -22,8 +21,8 @@ const LandingPage = () => {
         <Hero />
         <Content />
         <OurPurpose />
-        {/* <OurTeam /> */}
-        <Team />
+        <OurTeam />
+        {/* <Team /> */}
       </Layout>
     </>
   );
