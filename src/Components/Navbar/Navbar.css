@@ -11,6 +11,7 @@
   width: 100vw;
   background-color: var(--nav-background);
   position: sticky;
+  z-index: 500;
   top: 0;
 }
 

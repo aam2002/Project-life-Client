@@ -128,10 +128,14 @@ function Content() {
 
   const [currentChapterIndex, setCurrentChapterIndex] = useState(0);
   const [activeDotIndex, setActiveDotIndex] = useState(0);
-  const [cardQuentity, setCardQuentity] = useState(8);
+  const [cardQuentity, setCardQuentity] = useState(6);
   useEffect(() => {
     let screenWidth = (window.screen.availWidth * 80) / 100;
-    setCardQuentity(Math.trunc(screenWidth / 266) * 2);
+    
+    console.log(window.screen.availHeight)
+    if (window.screen.availWidth >= 768) {
+      setCardQuentity(Math.trunc(screenWidth / 266) * 2);
+    }
   }, []);
 
   const nextPage = () => {
