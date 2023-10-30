@@ -11,11 +11,10 @@
 
 .content-card {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   gap: 34px;
-
 }
 
 .content-h {
@@ -99,7 +98,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
   .content-h,
   .content-p {
     width: 80vw;
