@@ -6,176 +6,109 @@
   background-color: var(--nav-background);
 }
 .homemain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: var(--nav-background);
-
+  display: grid;
+  grid-template-rows: 1px 500px 180px;
+  grid-template-columns: repeat(11, 1fr);
+}
+.headingbox {
+  align-self: center;
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+.dots-container {
+  grid-column: 1/2;
+  grid-row: 3/-1;
+  align-self: self-start;
+  justify-self: start;
 }
 
-.homemain2 {
-  display: flex;
-  justify-content: center;
-
-
+.right-box {
+  grid-column: 3/-1;
+  grid-row: 1/-1;
+  box-sizing: border-box;
 }
-
-.dots-container2 {
-  width: 80vw;
-}
-
-
-.homeboxdiv {
-  display: flex;
-  gap: 47px;
-  flex-direction: column;
-  width: 80vw;
-}
-
-.homebox {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.homeboxheading {
-  margin-top: 4rem;
-}
-
 
 .bhagvat-heading {
   color: var(--nav-texthover-color);
   font-family: "Libre Baskerville", serif;
-  font-size: 4vw;
+  font-size: 64px;
   font-weight: bold;
 }
 
 .H2-tag {
   color: var(--text-black); 
   font-family: "Libre Baskerville", serif;
-  font-size: 4.44vw;
+  font-size: 64px;
   line-height: normal;
 }
-
 .para-text {
   color: var(--para);
-  font-size: 1.67vw;
+  font-size: 24px;
   font-family: "Roboto Flex", sans-serif;
   font-weight: 400;
 }
 
 .scroll-button {
   display: flex;
+
   justify-content: center;
-  width: 13vw;
-  padding: 3% 1%;
-  align-items: center;
+  width: 194.634px;
+  height: 50px;
+  padding: 13px 24px;
+  align-items: flex-start;
   gap: 8px;
   flex-shrink: 0;
   border-radius: 25.5px 0px;
   border: 2px solid #ff4500;
   font-family: "Roboto Flex", sans-serif;
   font-weight: 500;
-  font-size: 1.3vw;
+  font-size: 20px;
 }
-
 .scroll-button span {
   line-height: 23px;
   color: var(--text-black);
 }
+@media screen and (max-width: 768px) {
+  .homemain {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    justify-content: center;
+  }
+  .headingbox {
+    align-self: center;
+    grid-row: 2/-1;
+  }
 
-.right-box {
-  position: absolute;
-  top: 15%;
-  right: 4%;
-}
-
-.right-box img {
-  width: 55vw;
-  height: auto;
-}
-
-
-
-
-@media screen and (max-width:660px) {
   .right-box {
-    position: static;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    box-sizing: border-box;
   }
-
-  .right-box img {
-    order: 1;
-    width: 100%;
-    height: auto;
-
-
-  }
-
-  .homeboxheading {
-    order: 2;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .homebox {
-    flex-direction: column;
-    width: 100%;
-
-  }
-
-  .dots-container,
-  .dots-container2 {
-    display: none;
-  }
-
-  .bhagvat-heading {
-    font-size: 11vw;
-
-  }
-
-  .H2-tag {
-    font-size: 12vw;
-  }
-
-  .para-text {
-    font-size: 4vw;
-
-  }
-
-  .scroll-button {
-    width: 24vw;
-    padding: 2% 2%;
-    font-size: 2.4vw;
-  }
-}
-
-@media screen and (max-width: 430px) {
-  .scroll-button {
-    width: 32vw;
-    padding: 2% 2%;
-    font-size: 2.4vw;
-  }
-}
-
-
-@media screen and (mim-width: 1600px) {
-  .right-box {
+  .dots-container {
     position: absolute;
-    top: 3%;
-    right: 4%;
+    visibility: hidden;
   }
-
-  .right-box img {
-    width: 50vw;
+  .bhagvat-heading {
+    font-size: 48px;
+    font-weight: bold;
   }
-
-  .homeboxdiv {
-    display: flex;
-    gap: 18vh;
-    flex-direction: column;
-    width: 80vw;
-
+  .H2-tag {
+    font-size: 48px;
   }
-
+  .para-text {
+    font-size: 15px;
+  }
+  .homemain {
+    align-content: center;
+  }
+  .scroll-button {
+    font-size: 12px;
+    align-items: center;
+    width: 180.33px;
+    height: 40.62px;
+  }
+  .scroll-button span {
+    line-height: 23px;
+    color: var(--text-black);
+  }
 }

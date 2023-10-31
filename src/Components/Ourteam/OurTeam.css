@@ -1,82 +1,33 @@
-/* .team {
- display: flex;
+.about-card-parent {
+  background-color: var(--nav-background);
+  border-radius: 20px;
 }
+.about-card {
+  display: grid;
+  grid-template-columns: 328px 1fr;
+  grid-gap: 30px;
 
-.slider-controls {
-  display: flex;
-  align-items: center;
-  justify-content: center;
- 
+  align-content: center;
 }
-
-.prev-button,
-.next-button {
- background-color: transparent;
-  color: #000000;
-  padding: 6px 12px;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
+.about-card-name {
+  color: var(--nav-texthover-color);
+  font-family: "Libre Baskerville", serif;
+  font-size: 53px;
 }
-
-.next-button {
-  margin-left: 10px;
-}
-
-.card-slider-container {
-  display: flex;
-  overflow-x: auto;
-  white-space: nowrap;
-  margin: 0 -10px; 
-  padding: 10px 0; 
-}
-
-.card-slider {
-  display: flex;
-}
-
-.next-line {
-  height: 20px; 
-  background-color: red; 
-  border-top: 4px double #d5bb8a; 
-  border-bottom: 4px double #d5bb8a; 
-  margin-top: 10px;
-}
-
-.prev-line {
-  height: 20px;
-  background-color: rgb(134, 248, 19); 
-  /* border-top: 4px solid #d5bb8a;
-  border-bottom: 4px solid #d5bb8a; 
-  margin-top: 10px; */
-/* } 
-
-.team-thank {
-  text-align: center;
-  padding-top: 90px;
-  padding-bottom: 30px;
+.about-card-degination {
+  color: var(--text-black);
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
   font-weight: 700;
-  
-}  */
-
-
-.team1{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: antiquewhite;
- 
+  line-height: normal;
+  letter-spacing: 0.39rem;
+  text-transform: uppercase;
 }
-.team2{
-  width: 80vw;
-  background-color: red;
-}
-
-.team-p{
-    font-family: 'Libre Baskerville', serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: var(--text-black);
-    margin-top: 40px;
-    margin-bottom: 40px;
+.about-card-btn {
+  color: var(--text-black);
+  width: 102px;
+  height: 32px;
+  background-color: var(--team-btn);
+  box-shadow: 15px 15px 15px 0px var( --team-btn-shaddow-1), -15px -15px 15px 0px var( --team-btn-shaddow-2);
 }

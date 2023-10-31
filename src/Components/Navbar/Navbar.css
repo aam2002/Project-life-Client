@@ -10,8 +10,9 @@
 .nav-container {
   width: 100vw;
   background-color: var(--nav-background);
-  /* position: sticky;
-  top: 0; */
+  position: sticky;
+  z-index: 500;
+  top: 0;
 }
 
 .navlogo img {
