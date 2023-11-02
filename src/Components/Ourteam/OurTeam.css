@@ -2,6 +2,7 @@
   background-color: var(--nav-background);
   border-radius: 20px;
 }
+
 .about-card {
   display: grid;
   grid-template-columns: 328px 1fr;
@@ -29,5 +30,31 @@
   width: 102px;
   height: 32px;
   background-color: var(--team-btn);
-  box-shadow: 15px 15px 15px 0px var( --team-btn-shaddow-1), -15px -15px 15px 0px var( --team-btn-shaddow-2);
+  box-shadow: 15px 15px 15px 0px var(--team-btn-shaddow-1),
+    -15px -15px 15px 0px var(--team-btn-shaddow-2);
+}
+@media screen and (max-width: 768px) {
+  .about-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-card-parent {
+    background-color: var(--nav-background);
+    border-radius: 20px;
+    width: 80vw;
+  }
+  .motion-div {
+    display: flex;
+    gap: 1rem;
+    height: 80vh;
+  }
+  .about-card-name {
+    font-size: 32px;
+  }
+  .about-card-degination {
+    font-size: 1.18rem;
+  }
+  .about-card-btn {
+    width: 20rem;
+  }
 }
