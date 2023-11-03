@@ -22,6 +22,7 @@ p {
 
 body {
   background-color: var(--body-background);
+ 
   overflow-x: hidden;
 }
 :root {
@@ -56,4 +57,8 @@ body {
   --team-btn: #4d3c2a;
   --team-btn-shaddow-1: rgb(0 0 0 / 12%);
   --team-btn-shaddow-2: rgb(35 35 35 / 25%);
+  background-image: url('../public/background.png') ; 
+  background-size: cover; 
+  opacity:4.5;
 }
+

@@ -4,7 +4,7 @@ import Content from "../Content/Content";
 import OurPurpose from "../Our-purpose/OurPurpose";
 import OurTeam from "../Ourteam/OurTeam";
 import Layout from "../Layout/Layout";
-import InsideChapter from "../Chapter/InsideChapter";
+import Contentpage from "../Contentpage/Contentpage";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const LandingPage = () => {
@@ -19,11 +19,10 @@ const LandingPage = () => {
         <Routes/>
       </BrowserRouter> */}
       <Layout>
-        {/* <Hero />
+        <Hero />
         <Content />
         <OurPurpose />
-        <OurTeam /> */}
-        <InsideChapter />
+        <OurTeam />
       </Layout>
     </>
   );

@@ -7,7 +7,6 @@
   display: grid;
   grid-template-columns: 328px 1fr;
   grid-gap: 30px;
-
   align-content: center;
 }
 .about-card-name {

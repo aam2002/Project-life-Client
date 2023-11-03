@@ -13,6 +13,7 @@ function Navbar() {
       <div className="nav-container">
         <div className="navbar">
           <div className="navlogo">
+          
             <img src="logoblack.png" alt="logo" />
           </div>
 
