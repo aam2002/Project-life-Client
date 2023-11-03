@@ -5,16 +5,10 @@ import Discord from "../../images/Discord-icon.png";
 import Insta from "../../images/Instagram-icon.png";
 import Facebook from "../../images/Facebook-icon.png";
 import Github from "../../images/Github-icon.png";
-// import Linkedin from "../../images/linkedin-Icon.png";
-// import Whatsapp from "../../images/Whatsapp-icon.png";
 import "./OurTeam.css";
 const Example = () => {
   return (
     <div>
-      {/* <div className="w-[80vw] flex mx-auto mt-20 flex-col">
-        <p className="content-h">Our Team</p>
-        <p className="content-p">Meet Our Team Members</p>
-      </div> */}
       <HorizontalScrollCarousel />
     </div>
   );
