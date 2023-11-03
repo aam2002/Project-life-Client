@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@300;400;500;600&family=Roboto+Flex:opsz@8..144&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300&family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap");
 
 * {
   margin: 0;
@@ -21,6 +22,7 @@ p {
 
 body {
   background-color: var(--body-background);
+ 
   overflow-x: hidden;
 }
 :root {
@@ -36,9 +38,11 @@ body {
   --team-connect-border: #d5bb8a;
   --team-connect-text: #a78555;
   --body-background: #ffffff;
-  --content-dot:#E6E6E6;
-  --content-active-dot:#ff6600;
- 
+  --content-dot: #e6e6e6;
+  --content-active-dot: #ff6600;
+  --team-btn: #ffffff;
+  --team-btn-shaddow-1: rgba(0, 0, 0, 0.03);
+  --team-btn-shaddow-2: rgba(255, 255, 255, 0.25);
 }
 
 [data-theme="dark"] {
@@ -49,8 +53,12 @@ body {
   --content-p: #ff6600;
   --content-per: #ffffff;
   --body-background: #4d3c2a;
-  --content-dot:#392B1D;
- 
-  
-  
+  --content-dot: #392b1d;
+  --team-btn: #4d3c2a;
+  --team-btn-shaddow-1: rgb(0 0 0 / 12%);
+  --team-btn-shaddow-2: rgb(35 35 35 / 25%);
+  background-image: url('../public/background.png') ; 
+  background-size: cover; 
+  opacity:4.5;
 }
+

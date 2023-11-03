@@ -12,6 +12,7 @@ const Example = () => {
   return (
     <div>
       <HorizontalScrollCarousel />
+     
     </div>
   );
 };
@@ -26,7 +27,7 @@ const HorizontalScrollCarousel = () => {
 
   return (
     <section ref={targetRef} className="relative h-[700vh] w-[80vw] mx-auto">
-      <div>Our team</div>
+      <div className="ourteam-text">Our team</div>
       <div className="sticky top-32 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4 ">
           {cards.map((card) => {
@@ -109,23 +110,31 @@ export default Example;
 const cards = [
   {
     name: "Aman soni",
+    
+
   },
   {
     name: "Md. Sohil",
+    
   },
   {
     name: "Juli kumari Roy",
+  
   },
   {
     name: "Paradox",
+ 
   },
   {
     name: "Deepa tatti",
+   
   },
   {
     name: "Aman Choudhary",
+    
   },
   {
     name: "random",
+   
   },
 ];

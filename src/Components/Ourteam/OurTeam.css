@@ -31,3 +31,11 @@
   background-color: var(--team-btn);
   box-shadow: 15px 15px 15px 0px var( --team-btn-shaddow-1), -15px -15px 15px 0px var( --team-btn-shaddow-2);
 }
+
+.ourteam-text{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--text-black);
+  padding-top: 40px;
+}

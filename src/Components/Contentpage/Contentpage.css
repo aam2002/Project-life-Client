@@ -1,0 +1,169 @@
+.contentbigbox1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--nav-background);
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    padding-bottom: 100px;
+
+
+}
+
+.contentcircleimg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.contentcircleimg img {
+    width: 45vw;
+
+}
+
+.contentdots {
+    position: absolute;
+    bottom: 0;
+    right: 10vw;
+    z-index: 1;
+}
+
+
+
+.contentbigbox2 {
+    position: relative;
+    z-index: 1;
+    width: 80vw;
+    height: auto;
+    background-color: var(--body-background);
+    border: 2px solid black;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-top: 60px;
+
+
+
+}
+
+.arrowimg {
+    background-color: var(--nav-background);
+    width: 50px;
+    height: auto;
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--text-black);
+    position: absolute;
+    position: absolute;
+    top: 61px;
+    left: 66px;
+    z-index: 1;
+
+
+}
+
+
+
+
+.contentverse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+
+}
+
+.verse-section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verse-section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+ 
+}
+
+.verseheading {
+   
+    color: var(--text-black);
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+.icon2 {
+    color: var(--text-black);
+    cursor: pointer;
+    margin: 0 2.5vw;
+}
+
+.icon {
+    background-color: var(--nav-texthover-color);
+    padding: 10px;
+    width: 2vw;
+    height: 3vh;
+    border-radius: 50%;
+    color: white;
+}
+
+.contentheading {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    padding: 0px 30px;
+}
+
+.contentdiv2 {
+    display: flex;
+    justify-content: center;
+    margin: 80px 20px;
+
+}
+
+.contentText {
+    width: 43vw;
+    color: var(--text-black);
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.contentpageimg img {
+    width: 30vw;
+
+}
+
+.active-verse {
+    color: blue;
+    /* You can customize other styles as needed, like font-weight, background color, etc. */
+  }
+
+@media screen and (max-width: 660px) {
+    .contentdiv2 {
+        flex-direction: column;
+
+    }
+
+    .contentText {
+        order: 2;
+        width: 100%;
+
+    }
+
+    .contentpageimg img {
+        order: 1;
+        width: 100%;
+    }
+
+    .arrowimg {
+        display: none;
+    }
+    .contentcircleimg img{
+        display: none;
+    }
+}
+
+

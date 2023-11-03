@@ -16,18 +16,36 @@ function OurPurpose() {
           <div className="purpose-box">
             <div className="p-p">
               <p>
-                The purpose of a Bhagavad Gita website is to serve as an online platform dedicated to the teachings, wisdom, and philosophy of the Bhagavad Gita, a sacred Hindu scripture.
+                The purpose of our website is to provide a profound and
+                accessible resource for the timeless teachings and wisdom of the
+                Bhagavad Gita. We are dedicated to making this sacred text
+                available to people of all backgrounds, aiming to be a source of
+                spiritual enlightenment, introspection, and inspiration. Through
+                a carefully curated collection of content, including
+                translations, commentaries, articles, videos, and interactive
+                resources, our mission is to offer a deep and meaningful
+                exploration of the Bhagavad Gita's profound messages.
                 <br />
-                This website aims to fulfill several important objectives:
+                In a world filled with challenges and uncertainties, the
+                Bhagavad Gita's wisdom serves as a guiding light, offering
+                insights into the complexities of life, duty, and spirituality.
+                Our website is designed to facilitate a better understanding of
+                these ancient teachings, enabling individuals to apply them to
+                their daily lives. Whether you are a seeker of spiritual truth,
+                a scholar of religious texts, or simply curious about the wisdom
+                contained within the Bhagavad Gita, our platform is here to
+                welcome you.
                 <br />
-                <b>Education and Awareness:</b> The primary purpose is to educate people about the Bhagavad Gita's profound teachings. It provides accessible information about the scripture's context, content, and significance, making it available to a global audience.
-                <br />
-                <b>Spiritual Guidance:</b> The website offers guidance on how individuals can apply the Gita's teachings in their daily lives to attain spiritual growth, inner peace, and a sense of purpose.
-                <br />
-                <b>Cultural Preservation:</b> It plays a role in preserving and promoting the cultural and philosophical heritage of India, ensuring that the wisdom of the Gita is passed down to future generations.
-                <br />
-                <b>Inspiration and Motivation:</b> The website can inspire and motivate individuals to lead a purposeful life, emphasizing concepts like duty, righteousness, and self-realization.
-
+                We believe that the Bhagavad Gita holds the key to personal
+                growth, inner peace, and a profound connection with the
+                universal truths it conveys. It is a timeless scripture that
+                transcends boundaries and speaks to the human spirit on a
+                profound level. Our website strives to be a sanctuary where
+                individuals can come together to explore, learn, and reflect on
+                the eternal wisdom of the Bhagavad Gita. We hope that, through
+                our efforts, we can help people find solace, guidance, and
+                profound meaning in the verses of this sacred text, and in doing
+                so, contribute to a more enlightened and harmonious world.
               </p>
             </div>
             <div className="purpose-circle">
@@ -39,7 +57,6 @@ function OurPurpose() {
           </div>
         </div>
       </div>
-
     </div>
   );
 }

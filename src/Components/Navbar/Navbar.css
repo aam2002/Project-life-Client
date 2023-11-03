@@ -24,7 +24,6 @@
   display: flex;
   list-style: none;
   gap: 30px;
-
 }
 
 .nav-list-item li {
@@ -51,7 +50,6 @@
   outline: none;
 }
 
-
 .nav-list-item-mobile {
   position: fixed;
   top: 0;
@@ -75,18 +73,15 @@
   font-size: 16px;
 }
 
-
 .nav-list-item-mobile ul li {
   margin: 40px;
   text-align: center;
-
 }
 
 .nav-list-item-mobile ul li:hover {
   text-decoration: underline;
   text-decoration-color: var(--nav-texthover-color);
 }
-
 
 @media screen and (max-width: 660px) {
   .nav-list-item ul li {
@@ -95,7 +90,6 @@
 
   .toggle-button {
     display: block;
-
   }
 
   .darkmode {
@@ -112,7 +106,4 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-
-
-
 }
