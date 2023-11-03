@@ -81,5 +81,3 @@ function Contentpage() {
 }
 
 export default Contentpage;
-
-
