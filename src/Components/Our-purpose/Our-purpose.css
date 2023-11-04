@@ -1,100 +1,84 @@
 .our_purpose {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-color: var(--nav-background);
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--nav-background);
 }
 
 .purpose {
-    width: 80vw;
-    background-color: var(--nav-background);
-
-
+  width: 80vw;
+  background-color: var(--nav-background);
 }
 
 .purpose-bigbox {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  width: 100%;
 }
 
 .purpose-text {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 
 .purpose-box {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .purpose-heading {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: var(--text-black);
+  font-family: "Libre Baskerville", serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--text-black);
 }
 
 .purpose-para {
-    color: var(--nav-texthover-color);
-    font-family: "Roboto Flex", sans-serif;
-
+  color: var(--nav-texthover-color);
+  font-family: "Roboto Flex", sans-serif;
 }
 
 .p-p {
-    display: flex;
-    width: 50vw;
-    color: var(--text-black);
-    font-family: "Roboto Flex", sans-serif;
-
+  display: flex;
+  color: var(--text-black);
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px  ;
 }
 
 .purpose-img {
-    position: relative;
-    bottom: 54px;
-}
-
-.purpose-img img {
-    width: 415px;
-    height: 448px;
-    border-top-right-radius: 40%;
-    border-bottom-left-radius: 40%;
-    border: 2px solid black;
+  position: relative;
+  bottom: 54px;
 }
 
 .purpose-circle {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
 }
-
 
 @media screen and (max-width: 800px) {
-    .purpose-bigbox {
-        flex-direction: column;
-        gap: 30px;
-    }
+  .purpose-bigbox {
+    flex-direction: column;
+    gap: 30px;
+  }
 
-    .purpose-img {
-        display: flex;
-        justify-content: center;
-        bottom: 9px;
-    }
+  .purpose-img {
+    display: flex;
+    justify-content: center;
+    bottom: 9px;
+  }
 
-    .purpose-img img {
-        width: 60vw;
-        height: auto;
-        order: 1;
-    }
+  .purpose-img img {
+    width: 60vw;
+    height: auto;
+    order: 1;
+  }
 
-    .purpose-box {
-        order: 2;
-    }
+  .purpose-box {
+    order: 2;
+  }
 
-    .p-p {
-        width: 80vw;
-    }
-
+  .p-p {
+    width: 80vw;
+  }
 }
-

@@ -6,7 +6,6 @@ function OurPurpose() {
   const { data } = useContext(DataContext);
   console.log(data);
   return (
-    
     <div className="our_purpose">
       <div className="purpose">
         <div className="purpose-text">
@@ -52,9 +51,6 @@ function OurPurpose() {
             <div className="purpose-circle">
               <Dots rows={5} columns={15} />
             </div>
-          </div>
-          <div className="purpose-img">
-            <img src="logoblack.png" alt="" />
           </div>
         </div>
       </div>
