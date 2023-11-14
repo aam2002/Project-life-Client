@@ -36,13 +36,7 @@
 }
 .contentbigbox2 .explaination::-webkit-scrollbar {
   display: none;
-}
-.sanskrit {
-  font-size: 20px;
-  font-weight: 900;
-  text-align: center;
-  overflow-y: scroll;
-  height: 15%;
+
 }
 .sanskrit::-webkit-scrollbar {
   display: none;
@@ -124,10 +118,7 @@
   width: 30vw;
 }
 
-.active-verse {
-  color: blue;
-  /* You can customize other styles as needed, like font-weight, background color, etc. */
-}
+
 .english {
   font-size: 17px;
   font-weight: 500;
@@ -137,6 +128,14 @@
 }
 .english::-webkit-scrollbar {
   display: none;
+}
+
+.sanskrit {
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  overflow-y: scroll;
+  height: 15%;
 }
 
 @media screen and (max-width: 660px) {
