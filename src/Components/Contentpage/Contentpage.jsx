@@ -103,6 +103,10 @@
 // export default Contentpage;
 
 
+
+
+// juli update code
+
 import React, { useState } from "react";
 import "./Contentpage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -113,67 +117,101 @@ import {
   faArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import Layout from "../Layout/Layout";
+import { useNavigate } from "react-router";
+
 
 function Contentpage() {
   const [currentVerse, setCurrentVerse] = useState(1);
-  
+
   const verses = [
     {
-      sanskrit: "।। अथ प्रथमोऽध्यायः ।। धृतराष्ट्र उवाच धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः। मामकाः पाण्डवाश्चैव किमकुर्वत संजय।।1।।",
-      english: "।। Then the first chapter ।। Dhritarashtra said, They gathered at Kurukshetra in the field of Dharma and were eager to fight. What did my Pandavas and I do, O Sanjaya?",
-      explanation: "Explanation for verse 1 goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
+      sanskrit:
+        "।। अथ प्रथमोऽध्यायः ।। धृतराष्ट्र उवाच धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः। मामकाः पाण्डवाश्चैव किमकुर्वत संजय।।1।।",
+      english:
+        "।। Then the first chapter ।। Dhritarashtra said, They gathered at Kurukshetra in the field of Dharma and were eager to fight. What did my Pandavas and I do, O Sanjaya?",
+      explanation:
+        "Explanation for verse 1 goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
     },
     {
-      sanskrit: "संजय उवाच दृष्टवा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा। आचार्यमुपसंङगम्य राजा वचनमब्रवीत्।।2।।",
-      english: "Sanjay said Then Duryodhana, seeing the army of the Pandavas in battle array. The king approached the teacher and said these words.",
+      sanskrit:
+        "संजय उवाच दृष्टवा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा। आचार्यमुपसंङगम्य राजा वचनमब्रवीत्।।2।।",
+      english:
+        "Sanjay said Then Duryodhana, seeing the army of the Pandavas in battle array. The king approached the teacher and said these words.",
       explanation: "Explanation for verse 2 goes here.",
     },
-    
+
     {
-      sanskrit: "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्। व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता।।3।।",
-      english: "Behold, O teacher, this great army of the sons of Pandu. Arranged by your wise disciple the son of Drupada.",
-      explanation: "Explanation for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
+      sanskrit:
+        "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्। व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता।।3।।",
+      english:
+        "Behold, O teacher, this great army of the sons of Pandu. Arranged by your wise disciple the son of Drupada.",
+      explanation:
+        "Explanation for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
     },
     {
-      sanskrit: "Sanskrit content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
-      english: "English content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
-      explanation: "Explanation for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
+      sanskrit:
+        "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्। व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता।।3।।",
+      english:
+        "English content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
+      explanation:
+        "Explanation for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
     },
     {
-      sanskrit: "Sanskrit content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
-      english: "English content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
-      explanation: "Explanation for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
+      sanskrit:
+        "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्। व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता।।3।।",
+      english:
+        "English content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
+      explanation:
+        "Explanation for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
     },
     {
-      sanskrit: "Sanskrit content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
-      english: "English content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
-      explanation: "Explanation for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
+      sanskrit:
+        "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्। व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता।।3।।",
+      english:
+        "English content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
+      explanation:
+        "Explanation for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
     },
     {
-      sanskrit: "Sanskrit content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
-      english: "English content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
-      explanation: "Explanation for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
+      sanskrit:
+        "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्। व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता।।3।।",
+      english:
+        "English content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
+      explanation:
+        "Explanation for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
     },
     {
-      sanskrit: "Sanskrit content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
-      english: "English content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
-      explanation: "Explanation for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
+      sanskrit:
+        "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्। व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता।।3।।",
+      english:
+        "English content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
+      explanation:
+        "Explanation for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
     },
     {
-      sanskrit: "Sanskrit content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
-      english: "English content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
-      explanation: "Explanation for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
+      sanskrit:
+        "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्। व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता।।3।।",
+      english:
+        "English content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
+      explanation:
+        "Explanation for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
     },
     {
-      sanskrit: "Sanskrit content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
-      english: "English content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
-      explanation: "Explanation for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
+      sanskrit:
+        "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्। व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता।।3।।",
+      english:
+        "English content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
+      explanation:
+        "Explanation for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
     },
     {
-      sanskrit: "Sanskrit content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
-      english: "English content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
-      explanation: "Explanation for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
-      img:"contentpageimg.png",
+      sanskrit:
+        "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्। व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता।।3।।",
+      english:
+        "English content for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaa.",
+      explanation:
+        "Explanation for summary goes here dfjhgfjkslhgshhhhhhhhshshshshshshshshshssssdfjkghseroihweoihrgtjerfdsaadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.",
+      img: "contentpageimg.png",
     },
   ];
   const totalVerses = verses.length;
@@ -183,13 +221,14 @@ function Contentpage() {
     }
   };
 
+  const navigate = useNavigate();
+
   return (
     <>
-      <p></p>
       <Layout>
         <div className="contentbigbox1">
           <div className="contentbigbox2">
-            <div className="arrowimg">
+            <div className="arrowimg" onClick={() => navigate(-1)}>
               <FontAwesomeIcon icon={faArrowLeft} size="2xl" />
             </div>
 
@@ -232,15 +271,12 @@ function Contentpage() {
 
             <div className="contentdiv2">
               <div className="contentText">
-                <p className="sanskrit">
-                 {verses[currentVerse - 1].sanskrit}
+                <p className="sanskrit">{verses[currentVerse - 1].sanskrit}</p>
+                <p className="english">{verses[currentVerse - 1].english}</p>
+                <p className="explaination">
+                  {verses[currentVerse - 1].explanation}
                 </p>
-                <p className="english">
-                  {verses[currentVerse - 1].english}
-                </p>
-                <p className="explaination">{verses[currentVerse - 1].explanation}</p>
               </div>
-          
             </div>
           </div>
         </div>
@@ -250,6 +286,3 @@ function Contentpage() {
 }
 
 export default Contentpage;
-
-
-

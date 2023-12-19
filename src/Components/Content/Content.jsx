@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState} from "react";
+import { useNavigate } from "react-router";
 import "./Content.css";
 
 function Content() {
@@ -159,8 +160,11 @@ function Content() {
     currentChapterIndex + cardQuentity
   );
 
+  const navigate= useNavigate();
+
+ 
   return (
-    <div className="contentbox">
+    <div id="content" className="contentbox">
       <div className="content">
         <div className="content-heading">
           <p className="content-h">Content</p>
@@ -169,7 +173,7 @@ function Content() {
 
         <div className="content-card">
           {displayedChapters.map((chapter, index) => (
-            <div className="content-div" key={index}>
+            <div className="content-div" key={index} onClick={()=>navigate("/contentpage")} >
               <div className="content-img">
                 <img src={chapter.image} alt="" />
               </div>

@@ -10,7 +10,7 @@ import Github from "../../images/Github-icon.png";
 import "./OurTeam.css";
 const Example = () => {
   return (
-    <div>
+    <div id="our-team" >
       {/* <div className="w-[80vw] flex mx-auto mt-20 flex-col">
         <p className="content-h">Our Team</p>
         <p className="content-p">Meet Our Team Members</p>

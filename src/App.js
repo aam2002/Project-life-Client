@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import DataContextProvider from "./Components/context/DataContextProvider";
 import Contentpage from "./Components/Contentpage/Contentpage";
 
+
 function App() {
   return (
     <div>
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/contentpage" element={<Contentpage />} />
+  
         </Routes>
       </DataContextProvider>
     </div>

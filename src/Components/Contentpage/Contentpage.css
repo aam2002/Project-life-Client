@@ -1,4 +1,4 @@
-.contentbigbox1 {
+/* .contentbigbox1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,7 +103,7 @@
 }
 
 .contentdiv2 {
-  overflow-y: none;
+  overflow: none;
   height: 57vh;
   display: flex;
   justify-content: center;
@@ -130,7 +130,7 @@
   display: none;
 }
 
-.sanskrit {
+.sanskrit{
   font-size: 20px;
   font-weight: 900;
   text-align: center;
@@ -178,4 +178,159 @@
   .contentbigbox2 .explaination {
     height: 38%;
   }
+} */
+
+
+
+
+/* juli update code */
+
+
+.contentbigbox1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--nav-background);
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  padding-bottom: 100px;
+
 }
+
+
+.contentbigbox2 {
+  position: relative;
+  z-index: 1;
+  width: 80vw;
+  height: auto;
+  background-color: var(--body-background);
+  border: 2px solid black;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  margin-top: 60px;
+ 
+  
+}
+
+.arrowimg {
+  background-color: var(--nav-background);
+  width: 50px;
+  height: auto;
+  padding: 10px;
+  border-radius: 50%;
+  color: var(--text-black);
+  position: absolute;
+  position: absolute;
+  top: 61px;
+  left: 66px;
+  z-index: 1;
+}
+
+.contentverse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.verse-section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.verse-section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+
+.verseheading {
+  color: var(--text-black);
+  font-family: "Libre Baskerville", serif;
+}
+
+.icon {
+  background-color: var(--nav-texthover-color);
+  padding: 10px;
+  width: 2vw;
+  height: 3vh;
+  border-radius: 50%;
+  color: white;
+}
+
+
+.contentheading {
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+  padding: 0px 30px;
+  color: var(--text-black);
+}
+
+.icon2 {
+  color: var(--text-black);
+  cursor: pointer;
+  margin: 0 2.5vw;
+}
+
+.contentdiv2 {
+  display: flex;
+  justify-content: center;
+  margin: 30px 20px 60px 20px;
+   width: 90%; 
+}
+
+
+.contentText  {
+  color: var(--text-black);
+  font-family: "Roboto Flex", sans-serif;
+  width: 90%; 
+}
+
+
+.sanskrit{
+  font-size: 100%;
+  font-weight: 600;
+  text-align: center;
+  padding: 2%;
+  padding-bottom: 5%;
+  word-break: break-all;
+ 
+}
+
+
+.english{
+  font-size: 100%;
+  font-weight: 600;
+  text-align: center;
+  padding: 2%;
+  padding-bottom: 5%;
+  word-break: break-all;
+  
+}
+
+.explaination{
+  font-size:100%;
+  font-weight: 600;
+  text-align: center;
+  padding: 2%;
+  word-break: break-all;
+  padding-bottom: 5%;
+ 
+}
+
+
+
+@media screen and (max-width: 660px) {
+  .arrowimg {
+    display: none;
+   }
+
+}
+
+
+

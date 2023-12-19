@@ -6,7 +6,7 @@ function OurPurpose() {
   const { data } = useContext(DataContext);
   console.log(data);
   return (
-    <div className="our_purpose">
+    <div id="our-purpose" className="our_purpose">
       <div className="purpose">
         <div className="purpose-text">
           <p className="purpose-heading">Our Purpose</p>

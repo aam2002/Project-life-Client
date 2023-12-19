@@ -26,8 +26,8 @@ function Hero() {
       <div className="main">
 
       <div className="homelanding w-[100vw]">
-        <div className="homemain w-[80vw] mx-auto">
-          <div className="headingbox flex flex-col box-border md:w-[500px] w-[337px] ">
+        <div className="homemain w-[80vw] mx-auto ">
+          <div className="headingbox flex flex-col box-border md:w-[500px] w-[337px]">
             <h2 className="bhagvat-heading">Bhagvat Gita:</h2>
             <p className="H2-tag">
               Your path to <br /> divinity{" "}
